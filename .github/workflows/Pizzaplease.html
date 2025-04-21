@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+		<meta http-equiv="pragma" content="no-cache">
+		<meta http-equiv="Cache-Control" content="no-cache, must-revalidate">
+		<meta http-equiv="expires" content="Wed, 26 Feb 1997 08:21:57 GMT">
+		<title>Suremore Games</title>
+		<link rel="stylesheet" type="text/css" href="fonts/iconfont.css" />
+		<!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
+		<link rel="stylesheet" href="css/bootstrap.css">
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+		<style>
+			/* css style: */
+			
+			html,
+			body {
+				-moz-user-select: none;
+				-khtml-user-select: none;
+				user-select: none;
+				line-height: 1.7;
+				letter-spacing: 0.02em;
+			}
+			
+			p span {
+				margin-top: -20px
+			}
+			
+			.body {
+				margin-top: 50px;
+			}
+			
+			@media (min-width: 768px) {
+				.body {
+					margin-top: 100px;
+				}
+			}
+		</style>
+	</head>
+
+	<body unselectable="on" onselectstart="return false;" style="-moz-user-select:none; background: #f2f2f2;">
+		<header class="site-header container" role="banner" style="position: fixed;top: 0;  left: 0; width: 100%; z-index: 9;">
+			<nav class="navbar navbar-default">
+				<div class="container-fluid">
+					<!-- Brand and toggle get grouped for better mobile display -->
+					<div class="navbar-header" style="position: relative; z-index: 10;">
+						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                                <span class="icon">
+                                    <span class="icon-bar top-bar"></span>
+            			            <span class="icon-bar bottom-bar"></span>
+                                </span>
+                            </button>
+						<!--<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+					        <span class="sr-only">Toggle navigation</span>
+					        <span class="icon-bar"></span>
+					        <span class="icon-bar"></span>
+					        <span class="icon-bar"></span>
+				      	</button>-->
+						<a class="navbar-brand" href="#"><img src="images/logo_top.png" /></a>
+					</div>
+
+					<!-- Collect the nav links, forms, and other content for toggling -->
+					<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" style="position: absolute; width: 100%;z-index: 9; background: rgba(0, 0, 0, 0.95);">
+						<ul class="nav navbar-nav navbar-right">
+							<li>
+								<a href="index.html">HOME</a>
+							</li>
+							<li>
+								<a>GAMES</a>
+							</li>
+							<li class="active">
+								<a>ABOUT</a>
+							</li>
+							<li>
+								<a href="Contact.html">CONTACT</a>
+							</li>
+						</ul>
+					</div>
+					<!-- /.navbar-collapse -->
+				</div>
+				<!-- /.container-fluid -->
+			</nav>
+		</header>
+		<div class="body">
+			<div class="app">
+				<div>
+					<div style="text-align: center;">
+						<img src="images/icon_pizzaplease.png" class="icon" />
+					</div>
+					<h1 class="title">Pizza Please!</h1>
+					<div class="content">
+						This is easy sorting like game.<br />
+						Deliver all the orders by matching the slices,<br />
+						try to complete a whole pizza!
+					</div>
+					<div class="link">
+						<a href=""><img src="images/btn_Google Play.png" class="btn" alt=""></a><br/>
+						<a href=""><img src="images/btn_App Store.png" class="btn" alt=""></a>
+					</div>
+					<div style="text-align: center; color: black;">Coming Soon</div>
+				</div>
+			</div>
+		</div>
+		<footer>
+			<div class="container1">
+				<div class="left">
+					<img src="images/logo_bottom.png" class="logo" />
+					<a href="About_cn.html"><span class="iconfont icon-diqiu"></span>中文</a>
+				</div>
+				<div class="center">
+					<div class="navbar1">
+						<ul>
+							<li>
+								<a href="Terms.html">TERMS OF USE</a>
+							</li>
+							<li>
+								<a href="PrivacyPolicy.html">PRIVACY POLICY</a>
+							</li>
+							<li>
+								<a>ABOUT US</a>
+							</li>
+							<li>
+								<a href="Contact.html">CONTACT US</a>
+							</li>
+						</ul>
+						<div class="change">
+							<a>English</a>
+							<a href="About_cn.html">中文</a>
+						</div>
+					</div>
+					<!--<div class="cpr">
+						Copyright&copy; Suremore Games
+						<a>粤ICP备17033530号</a>文网文号：粤网文〔2018〕7930-2851号
+					</div>-->
+					<div class="encpr">
+						&copy; 2018 Suremore Games. All Rights Reserved.
+					</div>
+				</div>
+				<div class="right">
+					<a class="iconfont icon-wechat wx"></a>
+					<a href="http://weibo.com/suremoregames" target="_blank" class="iconfont icon-weibo wb"></a>
+					<a href="https://www.facebook.com/SuremoreGames/" target="_blank" class="iconfont icon-facebook fb"></a>
+					<div style="padding-top: 20px;">
+						<span class="totop" onclick="smoothscroll()">To The Surface<em></em></span>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<script src="js/jquery-1.11.0.js" type="text/javascript" charset="utf-8"></script>
+		<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+		<script src="js/bootstrap.min.js"></script>
+		<script type="text/javascript">
+			function smoothscroll() {
+				var currentScroll = document.documentElement.scrollTop || document.body.scrollTop;
+				if(currentScroll > 0) {
+					window.requestAnimationFrame(smoothscroll);
+					window.scrollTo(0, currentScroll - (currentScroll / 5));
+				}
+			}
+		</script>
+		<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=lcZPmNGcF376KgVu4nal44Gy8xOr2VKt"></script>
+		<script type="text/javascript">
+			var map = new BMap.Map("map"); // 创建地图实例  
+			var point = new BMap.Point(114.136205, 22.604135); // 创建点坐标  
+			map.centerAndZoom(point, 23);
+			var opts = {
+				width: 150, // 信息窗口宽度    
+				height: 10 // 信息窗口高度    
+				//				title: "Hello" // 信息窗口标题   
+			}
+			var infoWindow = new BMap.InfoWindow("Suremore Games", opts); // 创建信息窗口对象    
+			map.openInfoWindow(infoWindow, map.getCenter());
+			map.enableScrollWheelZoom(true);
+		</script>
+	</body>
+
+</html>
