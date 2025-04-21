@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title>SureMore Studio</title>
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+		<meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+		<link rel="shortcut icon" href="/favicon.ico" />
+		<link rel="bookmark" href="/favicon.ico" />
+		<link rel="stylesheet" href="https://at.alicdn.com/t/font_529261_yyh9wnvuf9cz0k9.css">
+		<link rel="stylesheet" type="text/css" href="css/common.css"/>
+		<link rel="stylesheet" type="text/css" href="css/banner.css" />
+		<link rel="stylesheet" type="text/css" href="css/style.css"/>
+		<link rel="stylesheet" type="text/css" href="css/animate.css"/>
+		<style type="text/css">
+			.infinite{animation-iteration-count:infinite;}
+		</style>
+	</head>
+
+	<body>
+		<header>
+			<div class="container">
+				<a class="logo"><img src="images/logo_top.png" class="animated rubberBand infinite"/></a>
+				<ul class="navbar">
+					<li class="curr">
+						<a>HOME</a>
+					</li><li>
+						<a>GAMES</a>
+					</li><li>
+						<a>ABOUT</a>
+					</li><li>
+						<a>CONTACT</a>
+					</li>
+				</ul>
+			</div>
+		</header>
+		<section class="banner">
+			<!--[if lte IE 9]>
+				<p class="IE9">您的浏览器版本过低，请点击
+					<a href="https://browsehappy.com/" target="_blank">升级您的浏览器</a>提示您的浏览体验！</p>
+				<![endif]-->
+			<div id="carousel" class="carousel" @mouseover="isCarousel=true" @mouseout="isCarousel=false">
+				<div class="carousel-inner">
+					<transition name="carousel-animates" enter-class="carousel-animate-enter" leave-class="carousel-animate-leave" :leave-active-class="leaveToClass">
+						<template>
+							<div class="item" :key="active">
+								<a :href="carousel[active].url">
+									<img :src="carousel[active].image" alt="">
+								</a>
+							</div>
+						</template>
+					</transition>
+				</div>
+				<!--<ol class="carousel-indicators">
+					<li @click="move(active>index?-1:1,index)" v-for="(item,index) in carousel" :key="index" :class="index===active?'item active':'item'">{{index+1}}</li>
+				</ol>-->
+				<a @click="move(-1)" class="left carousel-control"><i class="iconfont icon-zuo"></i></a>
+				<a @click="move(1)" class="right carousel-control"><i class="iconfont icon-you"></i></a>
+			</div>
+		</section>
+		<div class="body">
+			<div class="container">
+				<div class="title">
+					<span style="transform: rotateZ(135deg); display: inline-block; float: left; margin-top: -10px; margin-right: 10px; margin-left: -10px;">
+						<span class="icon animated swing infinite"></span>
+					</span>
+					Explore our games
+				</div>
+				<ul class="gamelist">
+					<li>
+						<img src="images/game1.png"/>
+					</li>
+					<li>
+						<img src="images/game1.png"/>
+					</li>
+					<li>
+						<img src="images/game1.png"/>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<footer>
+			<div class="container">
+				<div class="left">
+					<img src="images/logo.jpg" class="logo" />
+				</div>
+				<div class="center">
+					<div class="navbar">
+						<a href="PrivacyPolicy.html">Privacy Policy</a>
+						<a>Cookie Policy</a>
+						<a>Teams of Service</a>
+						<a>Contacts</a>
+					</div>
+					<div class="cpr">
+						Copyright&copy; Suremore Games <a>粤ICP备17033530号</a>文网文号：粤网文〔2018〕7930-2851号
+					</div>
+				</div>
+				<div class="right">
+					<a href="https://www.facebook.com/SuremoreGames/"><img src=""/></a>
+					<a><img src=""/></a>
+					<a><img src=""/></a>
+				</div>
+			</div>
+		</footer>
+		<script src="https://cdn.jsdelivr.net/npm/vue@2.5.13/dist/vue.js"></script>
+		<script src="js/carouse.js"></script>	
+	</body>
+
+</html>

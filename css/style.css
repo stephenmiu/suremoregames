@@ -1,0 +1,485 @@
+/*header{
+	width: 100%;
+	min-width: 1200px;
+	position: relative;
+	background: #000000;
+	height: 100px;
+	overflow: hidden;
+}
+header .container{
+	min-width: 1200px;
+	width: 1200px;
+	margin: 0 auto;
+}
+header .logo{
+	float: left;
+}
+header .logo img{
+	height: 100px;
+	object-fit: cover;
+}
+header .navbar{
+	float: right;
+}
+header .navbar li{
+	display: inline-block;
+	line-height: 100px;
+	width: 100px;
+	text-align: center;
+	transition: all .3s linear;
+}
+header .navbar li:hover, header .navbar li.curr{
+	background: #3434e2;
+}
+header .navbar li:hover a, header .navbar li.curr a{
+	color: #fff;
+	display: block;
+	cursor: pointer;
+	text-align: center;
+}
+header .navbar li a{
+	color: #fff;
+	transition: all .3s linear;
+}*/
+
+.container-fluid {
+	padding: 0;
+}
+
+.blue {
+	color: #3434e2;
+}
+
+.body {
+	margin-top: 80px;
+}
+
+
+@media (min-width: 768px) {
+
+.body {
+	margin-top: 30px;
+}
+
+}
+@media (min-width: 1200px) {
+
+.body {
+	margin-top: 30px;
+}
+
+}
+.body .container1 {
+	margin: 0 auto;
+}
+
+
+.body .app .icon{
+	width: 250px;
+	margin: 50px auto 0 auto;
+}
+.body .app .title{
+	text-align:  center;
+}
+.body .app .content{
+	margin:   50px auto 0 auto;
+	text-align: center;
+	font-size: 16px;;
+	color: #000;
+}
+
+.body .app .link{
+	margin:  0 auto;
+	text-align: center;
+}
+.body.app .link a{
+	text-decoration:none; 
+}
+.body.app .link a:link {text-decoration:none;} 
+.body.app .link a:active:{ } 
+.body.app .link a:visited {text-decoration:none;}  
+.body .app .link .btn{
+	width: 200px;
+	margin-top: 20px;
+}
+
+
+
+.body .container1 .title {
+	color: #3434e2;
+	margin: 0 10px;
+}
+
+.body .container1 .title .icon {
+	width: 0;
+	height: 0;
+	display: inline-block;
+	border-width: 10px;
+	border-style: solid;
+	border-color: #3434e2 transparent transparent transparent;
+}
+
+.body .container1 .gamelist {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	margin-top: 30px;
+}
+
+.body .container1 .gamelist li {
+	/*display: inline-block;*/
+	width: 100%;
+	/*float: left;*/
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	position: relative;
+	height: 200px;
+	margin-bottom: 20px;
+}
+
+.body .container1 .gamelist li:last-child {
+	float: right;
+	margin-right: 0;
+}
+
+.body .container1 .gamelist li img {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+	object-fit: contain;
+}
+
+.container>.navbar-header,
+.container-fluid>.navbar-header,
+.container>.navbar-collapse,
+.container-fluid>.navbar-collapse {
+	margin-left: 0;
+	margin-right: 0;
+}
+
+@media (min-width: 768px) {
+	.body .tt {
+		font-size: 25px;
+	}
+	.body .container1 {
+		margin: 0 auto;
+	}
+	.body .container1 .title {
+		color: #3434e2;
+		margin: 0;
+	}
+	.body .container1 .gamelist li {
+		display: inline-block;
+		width: 30%;
+		float: left;
+		margin-right: 5%;
+		position: relative;
+		height: 200px;
+	}
+	.body .container1 .gamelist li img {
+		width: 100%;
+	}
+}
+
+@media only screen and (min-width: 1200px) {
+	.body .container1 {
+		min-width: 1200px;
+		width: 1200px;
+		margin: 0 auto;
+	}
+}
+
+footer {
+	margin-top: 80px;
+	padding: 40px 0;
+	background: #000;
+	overflow: hidden;
+}
+
+footer .container1 {
+	margin: 0 auto;
+}
+
+footer .container1 .logo {
+	width: 40px;
+}
+
+footer .container1 .left {
+	text-align: center;
+}
+
+footer .container1 .left a {
+	text-align: center;
+	display: none;
+}
+footer .container1 .left a span{
+	margin-right: 5px;
+}
+
+footer .container1 .center {
+	margin-top: 30px;
+}
+
+footer .container1 .navbar1 {}
+
+footer .container1 .navbar1 li,
+footer .container1 .navbar1 ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+footer .container1 .navbar1 li {
+	text-align: center;
+	padding: 10px 0;
+}
+
+footer .container1 .navbar1 a {
+	color: #8c8c8c;
+	font-size: 15px;
+	transition: all .3s linear;
+	text-decoration: none;
+}
+
+footer .change {
+	text-align: center;
+	font-size: 15px;
+	padding: 10px 0;
+}
+
+footer .change a {
+	color: #8c8c8c;
+}
+
+footer .change a:first-child {
+	margin-right: 20px;
+}
+
+footer .encpr,
+footer .cpr {
+	font-size: 15px;
+	padding: 27px 0;
+	color: #8c8c8c;
+	text-align: center;
+}
+
+footer .cpr span {
+	display: block;
+}
+
+footer .container1 .navbar1 a:hover {
+	color: #3434e2;
+}
+
+footer .totop {
+	color: #8c8c8c;
+	position: relative;
+	cursor: pointer;
+}
+
+footer .totop em {
+	width: 0;
+	height: 0;
+	display: inline-block;
+	border-width: 8px;
+	border-style: solid;
+	border-color: #8c8c8c transparent transparent transparent;
+	transform: rotateZ(180deg);
+	margin-left: 12px;
+}
+
+footer .container1 .cpr {
+	font-size: 13px;
+	line-height: 1;
+}
+
+footer .container1 .right {
+	text-align: center;
+}
+
+footer .container1 .right a {
+	margin: 5px;
+	color: #8c8c8c;
+	font-size: 30px;
+	text-decoration: none;
+	transition: all .3s linear;
+	-o-transition: all .3s linear;
+	-moz-transition: all .3s linear;
+	-webkit-transition: all .3s linear;
+}
+
+/*footer .container1 .right a:nth-child(3) {
+	font-size: 25px;
+	position: relative;
+	top: -3px;
+}*/
+
+footer .container1 .right a:hover {
+	color: #3434e2;
+}
+
+.b {
+	display: block;
+}
+.contactbox, .aboutbox {
+	padding: 10px 0;
+}
+.contactbox .title, .aboutbox .title{
+	font-size: 25px;
+}
+.contactbox .title .icon, .aboutbox .title .icon{
+	border-width: 12px !important;
+}
+.aboutbox .imgbox{
+	margin-bottom: 50px;
+}
+.aboutbox .imgbox img{
+	width: 100%;
+}
+.aboutbox .abox{
+	padding: 20px;
+	background: #fff;
+	border-radius: 5px;
+}
+.aboutbox .txtbox {
+	margin: 10px;
+}
+.mapbox{
+	background: #fff;
+	padding: 10px;
+}
+#map{
+	height: 400px
+}
+@media (min-width: 768px) {
+	#map{
+		height: 600px
+	}
+	.aboutbox .abox{
+		margin-top: 30px
+	}
+	.mapbox{
+		margin-top: 30px
+	}
+	.b {
+		display: none;
+	}
+	footer .container1 .left {
+		float: left;
+		width: 15%;
+		text-align: left;
+	}
+	footer .container1 .left a {
+		color: #8c8c8c;
+		text-decoration: none;
+		display: block;
+		margin-top: 22px;
+		position: relative;
+		text-align: left;
+	}
+	footer .container1 .left a:after {
+		position: absolute;
+		content: '';
+		display: block;
+		height: 20px;
+		width: 1px;
+		background: #8c8c8c;
+		right: 15%;
+		top: 0;
+	}
+	footer .container1 .navbar1 ul {
+		overflow: hidden;
+	}
+	footer .container1 .navbar1 li {
+		text-align: center;
+		padding: 10px 0;
+		float: left;
+		margin-right: 20px;
+	}
+	footer .change {
+		display: none;
+	}
+	footer .encpr,
+	footer .cpr {
+		text-align: left;
+		line-height: 2;
+	}
+	footer .container1 .cpr {
+		line-height: 1.5;
+	}
+	footer .cpr span {
+		display: inline-block;
+	}
+	footer .container1 .center {
+		float: left;
+		margin-top: 0;
+		width: 65%;
+	}
+	footer .container1 .right {
+		float: right;
+		width: 20%;
+	}
+	footer .right .wx:hover {}
+}
+
+@media (min-width: 1200px) {
+	.contactbox{
+		width: 1200px;
+		margin: 0 auto;
+	}
+	.mapbox{
+		padding: 20px;
+	}
+	footer .container1 {
+		width: 1200px;
+		min-width: 1200px;
+	}
+	
+	footer .container1 .left{
+		text-align: center;
+	}
+	footer .container1 .left a {
+		text-align: center;
+	}
+}
+
+.infinite {
+	animation-iteration-count: infinite;
+}
+
+.navbar .navbar-toggle {
+	z-index: 2000;
+	color: #fff;
+	border: none;
+}
+
+.navbar-toggle .icon-bar {
+	transition: all 0.2s;
+}
+
+.navbar-toggle .top-bar {
+	transform: rotate(45deg);
+	transform-origin: 30%;
+}
+
+.navbar-toggle .bottom-bar {
+	transform: rotate(-45deg);
+	transform-origin: 30%;
+}
+
+.navbar-toggle.collapsed .top-bar {
+	transform: rotate(0);
+}
+
+.navbar-toggle.collapsed .bottom-bar {
+	transform: rotate(0);
+}
+
+header {
+	background: rgba(0, 0, 0, 0.95);
+}
+.wx{display: none;}

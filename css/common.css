@@ -1,0 +1,136 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+font,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+dd,
+dl,
+dt,
+li,
+ol,
+ul,
+fieldset,
+form,
+label,
+legend {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-weight: inherit;
+	font-style: inherit;
+	font-family: inherit;
+	font-size: 100%;
+	text-align: left;
+	vertical-align: baseline;
+	font-family: "SF Pro SC","HanHei SC","SF Pro Text","Myriad Set Pro","SF Pro Icons","PingFang SC","Helvetica Neue","Helvetica","Arial",sans-serif;
+	-moz-user-select: none;
+	-khtml-user-select: none;
+	user-select: none;
+}
+a{
+	cursor: pointer;
+}
+ul,ol,li{
+	list-style: none;
+}
+img {
+	border: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/*--- 链接样式 ---*/
+
+a {
+	text-decoration: none;
+}
+
+
+
+blockquote {
+	margin: 0 0 18px 18px;
+	font-style: italic;
+}
+
+strong {
+	font-weight: bold;
+}
+
+em {
+	font-style: italic;
+}
+
+
+/* 常用样式----------------------------------------*/
+
+.left {
+	float: left;
+}
+
+.right {
+	float: right;
+}
+
+.clear {
+	clear: both;
+}
+
+.small {
+	font-size: .625em;
+}
+
+.large {
+	font-size: 1em;
+}
+
+.soft {
+	color: #D3D3D3;
+}
+
+.hide {
+	display: none;
+}
+
+p.last {
+	margin-bottom: 0px;
+}
